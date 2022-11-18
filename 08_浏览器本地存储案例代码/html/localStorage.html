@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        localStorage
+    </title>
+    <meta charset="'UTF-8">
+</head>
+
+<body>
+    <h2>localStorage</h2>
+    <div>
+        <button onclick="saveData()">点我保存数据</button>
+    </div>
+
+    <script type="text/javascript">
+        function saveData(){
+            console.log("保存data成功...")
+            localStorage.setItem("msg","hello")
+        }
+    </script>
+</body>
+
+</html>

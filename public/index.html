@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <!--使IE浏览器以最高级别渲染页面-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--开启移动端的理想视口-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--设置浏览器中页面title中显示的图标-->
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!--引入bootstrap.css样式-->
+    <link rel="stylesheet" href="<%= BASE_URL %>css/bootstrap.css">
+    <!--配置网页标题-->
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <!--如果浏览器不支持js，那么该提示就会出现在页面上-->
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+
+    <!--容器：用来接收放入的组件-->
+    <div id="app"></div>
+
+    <!-- built files will be auto injected -->
+
+    <!--加入js-->
+    <!-- <script type="text/javascript" src="../src/main.js"></script>
+    <script type="text/javascript" src="../js/vue.js"></script> -->
+  </body>
+</html>
